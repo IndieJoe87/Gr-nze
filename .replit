@@ -1,0 +1,12 @@
+run = "python src/main.py"
+language = "python3"
+entrypoint = "src/main.py"
+
+[nix]
+channel = "stable-22_11"
+
+[languages]
+python = 3.11
+
+[env]
+PYTHONPATH = "${PYTHONPATH}:${REPL_HOME}/src"
